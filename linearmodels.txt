@@ -1,0 +1,104 @@
+DATASET:MACHINE_CPU
+
+Simple Linear:
+Correlation coefficient                  0.7844
+Mean absolute error                     53.8054
+Root mean squared error                 99.5674
+Relative absolute error                 55.908  %
+Root relative squared error             61.8997 %
+Total Number of Instances              209 
+Time taken to build model: 0 seconds
+
+=== Classifier model (full training set) ===
+
+Linear regression on MMAX
+
+0.01 * MMAX - 34
+
+Predicting 0 if attribute value is missing.
+
+
+Linear:
+Correlation coefficient                  0.9012
+Mean absolute error                     41.0886
+Root mean squared error                 69.556 
+Relative absolute error                 42.6943 %
+Root relative squared error             43.2421 %
+Total Number of Instances              209     
+Time taken to build model: 0 seconds
+
+Linear Regression Model
+
+class =
+
+      0.0491 * MYCT +
+      0.0152 * MMIN +
+      0.0056 * MMAX +
+      0.6298 * CACH +
+      1.4599 * CHMAX +
+    -56.075 
+
+
+Multilayer Perceptron:
+Correlation coefficient                  0.9202
+Mean absolute error                     41.5204
+Root mean squared error                 65.286 
+Relative absolute error                 43.143  %
+Root relative squared error             40.5874 %
+Total Number of Instances              209     
+Time taken to build model: 0.04 seconds
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.2453060716327575
+    Node 1    -0.2708142439245409
+    Node 2    -0.6198149716074448
+    Node 3    -1.7062281051376724
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.1915603714585863
+    Attrib MYCT    0.6648913045154049
+    Attrib MMIN    0.2899119975763778
+    Attrib MMAX    -0.06095271487230166
+    Attrib CACH    0.14180459138455775
+    Attrib CHMIN    0.5504660291413217
+    Attrib CHMAX    0.5982382775244681
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.6007813694417803
+    Attrib MYCT    -0.12053364407537612
+    Attrib MMIN    -0.8630154469050607
+    Attrib MMAX    -0.9628029984236666
+    Attrib CACH    -1.4133040236723584
+    Attrib CHMIN    -1.2955194507540961
+    Attrib CHMAX    0.6563799675081958
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.9441937307718783
+    Attrib MYCT    0.6822353383940711
+    Attrib MMIN    -2.2746905896741714
+    Attrib MMAX    -0.9470049102066649
+    Attrib CACH    -0.13982103046438074
+    Attrib CHMIN    0.3961846944006477
+    Attrib CHMAX    -1.6652373351479384
+Class 
+    Input
+    Node 0
+
+
+Time To Build:
+	The times to build the models were short all around but not suprisingly the most complex classifier
+did take the longest amount of time.
+
+Accuracy:
+	The simple linear model was very bad in terms of accuracy when compared to the other two models.
+with almost 20% more errors than the other two models it did not preform well. The linear on the other hand,
+preformed suprisingly well. With <3% error gain when compared to the multilayered perceptron it handled itself 
+well.
+
+Ease of Implementation:
+	The simple linear model is EXTREMELY simple, it only takes one value into consideration which is nice
+interms of replicating the model by hand but is also very inaccurate. The nomral linear regression model is still
+relatively simple and easy to replicate but does take into account a lot more factors.The multilayer perceptron
+is extremely complicated and would be almost impossible to replicate of the user didn't know what they were looking at.
+	
